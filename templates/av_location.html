@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antivenom Location System</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+            background-color: #fff5c0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .header {
+            background-color: #ffb396;
+            padding: 1.2rem 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        
+        .text-heading {
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+        input {
+            width: 300px;
+            padding: 10px 30px;
+            margin-bottom: 1rem;
+            border-radius: 3px;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        button {
+            width: 300px;
+            padding: 10px 30px;
+            margin-bottom: 2rem;
+            background-color: #fdab8a;
+            border-radius: 5px;
+            outline: none;
+            border: 2px solid #5a5656;
+        }
+        
+         ::placeholder {
+            text-align: center;
+            color: #5a5656;
+        }
+        
+        input[type=text]:focus {
+            outline: none;
+            border: 3px solid rgb(136, 77, 77);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Antivenom Location Finder</h1>
+    </div>
+
+
+
+    <div class="container">
+
+
+
+        <div class="find-location">
+            <h3 class="text-heading">Search for the center</h3>
+            <div class="form-wrap">
+                <form action="add_persons_button" method="POST" class="form">
+                    <input type="text " placeholder="Enter person ID" name="Pid"><br>
+                    <input type="text " placeholder="Enter your name" name="Name"><br>
+                    <input type="text " placeholder="Enter your age " name="Age"><br>
+                    <input type="text " placeholder="Enter city " name="City"><br>
+                    <input type="text " placeholder="Enter district " name="District"><br>
+                    <input type="text " placeholder="Enter state " name="State"><br>
+                    <input type="text " placeholder="Enter the snake type " name="Snake_type"><br>
+                    <input type="text " placeholder="Enter the snake colour " name="Snake_colour"><br>
+                    <button type="submit " value="submit ">SUBMIT</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

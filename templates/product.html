@@ -1,0 +1,128 @@
+<head>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ac7a4b981f.js" crossorigin="anonymous"></script>
+    <style>
+        img:hover {
+            opacity: 0.6;
+            transition: 0.5s;
+        }
+        
+        nav {
+            background-color: #ffb396;
+        }
+        
+        body {
+            background-color: #fff5c0;
+        }
+        
+        button:hover {
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+
+<header class="tracking-wide bg-white">
+    <nav class="flex justify-between ">
+        <div class="text-xl">
+            <a href="#" class="ml-16 mr-4 hover:text-blue-800"><i class="fas fa-bars"></i></a>
+            <a href="#" class="hover:text-blue-800"><i class="fas fa-search"></i></a>
+        </div>
+        <h1 class="text-2xl font-semibold italic">Antivenoms</h1>
+        <div class="text-xl">
+            <a href="#" class="hover:text-blue-800"><i class="fas fa-user"></i></a>
+            <a href="#" class="mr-16 ml-4 hover:text-blue-800"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!--end of left nav-->
+    </nav>
+</header>
+
+<body class="tracking-wide">
+
+
+
+
+    <div class="mt-12 flex justify-between mb-8">
+        <h2 class="text-2xl mx-16 font-semibold">Buy Antivenoms</h2>
+        <div class="mx-16">
+            <span class="mr-4">5 items</span>
+            <select id="dropdown" class="py-6">
+          <option disabled selected value class="bg-white p-8">Sort by</option>
+          <option>Lowest Price</option>
+          <option>Highest Price</option>
+         
+        </select>
+        </div>
+    </div>
+    <form class="subscribeForm" name="Subscription Form" method="POST" action="/place_order">
+
+        <div class="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 mx-16 gap-8">
+            <div class="flex flex-col bg-gray-100">
+                <img src="https://wsed.org/wp-content/uploads/2018/08/crofab.jpg" class="" alt="CroFab">
+                <div class="hover:text-blue-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+                    <a href="#" class="text-lg font-medium"> CroFab</a>
+                    <a href="#" class="font-light default:text-gray-900">Rating: 10</a>
+                </div>
+                <button class="mx-2 mb-3 max-w-max bg-white border rounded hover:border-gray-600 flex justify-between p-2" type="submit" formaction="/place_order">
+                    <span class="mx-4 text-sm">Add to Cart </span>
+                    <span class="mx-4 text-sm">$16</span>
+                  </button>
+            </div>
+
+            <div class="flex flex-col bg-gray-100">
+                <img src="https://s.yimg.com/aah/yhst-135855760451349/vetone-antidote-3-rattler-antivenin-crotalidae-polyvalent-50ml-10.jpg" class="" alt="Antivenin (crotalidae) polyvalent">
+                <div class="hover:text-blue-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+                    <a href="#" class="text-lg font-medium">Antivenin (crotalidae) polyvalent</a>
+                    <a href="#" class="font-light default:text-gray-900">Rating: 10</a>
+                </div>
+                <button class="mx-2 mb-3 max-w-max bg-white border rounded hover:border-gray-600 flex justify-between p-2" type="submit" formaction="/place_order">
+          <span class="mx-4 text-sm">Add to Cart </span>
+          <span class="mx-4 text-sm">$18</span>
+        </button>
+            </div>
+
+
+
+            <div class="flex flex-col bg-gray-100">
+                <img src="https://www.pfizerhospitalus.com/sites/default/files/prod/child/images/0008-0423-01-antivenin-vial.jpg" class="" alt="Antivenin (micrurus fulvius)">
+                <div class="hover:text-blue-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+                    <a href="#" class="text-lg font-medium">Antivenin (micrurus fulvius)</a>
+                    <a href="#" class="font-light default:text-gray-900">Rating: 9.0</a>
+                </div>
+                <button class="mx-2 mb-3 max-w-max bg-white border rounded hover:border-gray-600 flex justify-between p-2" type="submit" formaction="/place_order">
+          <span class="mx-4 text-sm">Add to Cart </span>
+          <span class="mx-4 text-sm">$14</span>
+        </button>
+            </div>
+
+            <div class="flex flex-col bg-gray-100">
+                <img src="https://5.imimg.com/data5/XN/IC/MY-63906/mediclone-svas-polyvalent-snake-venom-anti-serum-500x500.jpeg" class="" alt="Antivenin Polyvalent">
+                <div class="hover:text-blue-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+                    <a href="#" class="text-lg font-medium"> Antivenin Polyvalent</a>
+                    <a href="#" class="font-light default:text-gray-900">Rating: 8.5</a>
+                </div>
+                <button class="mx-2 mb-3 max-w-max bg-white border rounded hover:border-gray-600 flex justify-between p-2" type="submit" formaction="/place_order">
+          <span class="mx-4 text-sm">Add to Cart </span>
+          <span class="mx-4 text-sm">$18</span>
+        </button>
+            </div>
+
+            <div class="flex flex-col bg-gray-100">
+                <img src="https://biosupply.fffenterprises.com/media/catalog/product/cache/1/small_image/250x170/9df78eab33525d08d6e5fb8d27136e95/a/n/anavip-20ml-vial-product-thumbimg.jpg" class="" alt="Anavip">
+                <div class="hover:text-blue-800 hover:underline flex flex-col mx-2 mt-4 mb-3">
+                    <a href="#" class="text-lg font-medium"> Anavip</a>
+                    <a href="#" class="font-light default:text-gray-900">Rating: 9.5</a>
+                </div>
+                <button class="mx-2 mb-3 max-w-max bg-white border rounded hover:border-gray-600 flex justify-between p-2" type="submit" formaction="/place_order">
+          <span class="mx-4 text-sm">Add to Cart </span>
+          <span class="mx-4 text-sm">$18</span>
+        </button>
+            </div>
+
+        </div>
+    </form>
+
+</body>
+
+<footer class="bg-black mt-16 pb-24 pt-12 tracking-wide">
+</footer>

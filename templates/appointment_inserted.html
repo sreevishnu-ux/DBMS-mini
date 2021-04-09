@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details</title>
+</head>
+
+<body style="box-sizing: border-box;
+    background-color: #fff5c0;
+    margin: 0;
+    padding: 0;">
+
+    <div style=" 
+        background-color: #ffb396;
+        padding: 1.2rem ;
+        margin: 0;
+        text-align: center;">
+        <h1 style="text-align: center; margin-top: 107px;">
+            Appointment Details</h1>
+    </div>
+
+
+    <div style="text-align: center; margin: 170px;">
+        <table width="100%" style="border: 1px solid black; text-align: center;border-collapse: collapse;">
+            <tr style="border: 1px solid black;">
+                <th width="(100/3)%" style="border: 1px solid black;">Appointment ID</th>
+                <th width="(100/3)%" style="border: 1px solid black;">Doctor Name</th>
+                <th width="(100/3)%" style="border: 1px solid black;">Phone</th>
+                <th width="(100/3)%" style="border: 1px solid black;">Appointment Date and Time</th>
+                <th width="(100/3)%" style="border: 1px solid black;">Facility ID</th>
+
+
+
+            </tr>
+            {% for avc in app %}
+            <tr width="100%" style="border: 1px solid black;">
+                <!--<form action="{{url_for('delete_appointment')}}" method="post">-->
+                <td width="(100/3)%" style="border: 1px solid black;">{{avc[0]}}</td>
+                <td width="(100/3)%" style="border: 1px solid black;">{{avc[1]}}</td>
+                <td width="(100/3)%" style="border: 1px solid black;">{{avc[2]}}</td>
+                <td width="(100/3)%" style="border: 1px solid black;">{{avc[3]}}</td>
+                <td width="(100/3)%" style="border: 1px solid black;">{{avc[4]}}</td>
+
+                <!-- </form>-->
+            </tr>{% endfor %}
+
+        </table>
+        </br>
+    </div>
+</body>
+
+
+</html>

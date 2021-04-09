@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+        
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        th {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body style="box-sizing: border-box;
+    background-color: #fff5c0;
+    margin: 0;
+    padding: 0;">
+    <div style=" 
+        background-color: #ffb396;
+        padding: 1.2rem ;
+        margin: 0;
+        text-align: center;">
+        <h1 style="text-align: center; margin-top: 107px;">
+            Emergency Contact Details</h1>
+    </div>
+
+
+    <div style="text-align: center; margin: 170px;">
+        <table class="center" width="50%" style="border: 2px solid black; text-align: center;border-collapse: collapse;">
+            <tr style="border: 2px solid black;">
+                <th width="40px" style="border: 2px solid black;text-align: center;">Contact Number</th>
+
+            </tr>
+            {% for c in con %}
+            <tr width="100%" style="border: 1px solid black;padding: 5px;">
+                <td width="40px" style="border: 1px solid black;text-align: center;">{{c[0]}}</td>
+
+            </tr>
+            {% endfor %}
+
+        </table>
+        </br>
+    </div>
+</body>
+
+</html>
