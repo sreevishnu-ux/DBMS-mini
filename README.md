@@ -6,3 +6,8 @@ Snakebite Antivenom Location Finder is a simple Web Application built using the 
 - Register Antivenom Centre
 - Option for Antivenom Centre to buy Antivenoms. 
 - Emergency Contacts
+
+# The project is built using:
+- HTML5/CSS for frontend
+- Python and Flask microframework for the backend
+- MySQL Workbench for the database
