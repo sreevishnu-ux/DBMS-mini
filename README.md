@@ -11,3 +11,10 @@ Snakebite Antivenom Location Finder is a simple Web Application built using the 
 - HTML5/CSS for frontend
 - Python and Flask microframework for the backend
 - MySQL Workbench for the database
+
+#installation
+To use this template, your computer needs:
+Use the package manager 
+- [pip](https://pip.pypa.io/en/stable/)
+- [python2] or python[3]
+
