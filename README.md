@@ -15,5 +15,5 @@ Snakebite Antivenom Location Finder is a simple Web Application built using the 
 # Installation
 To use this template, your computer needs:
 - [pip](https://pip.pypa.io/en/stable/)
-- [python2](https://www.python.org/download/releases/2.0/) or python[3](https://www.python.org/downloads/)
+- [python2](https://www.python.org/download/releases/2.0/) or [python3](https://www.python.org/downloads/)
 
